@@ -7,19 +7,6 @@ import Link from "next/link"
 import { CartIcon } from "@/components/cart-icon"
 import { useCart } from "@/context/cart-context"
 
-interface CartItem {
-  id: string
-  name: string
-  brand: string
-  price: number
-  processor: string
-  ram: string
-  storage: string
-  screen: string
-  image: string
-  quantity: number
-}
-
 export default function Checkout() {
   const { state: cartState, updateQuantity, removeFromCart, clearCart } = useCart()
   const cartItems = cartState.items
