@@ -14,6 +14,9 @@ export default function Home() {
               <Link href="/products" className="text-gray-700 hover:text-gray-900">
                 Products
               </Link>
+              <Link href="/dashboard" className="text-gray-700 hover:text-gray-900">
+                Dashboard
+              </Link>
               <Link
                 href="/checkout"
                 className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
@@ -31,7 +34,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Welcome to LaptopMarket</h2>
           <p className="text-xl text-gray-600 mb-8">Your one-stop marketplace for buying and selling laptops</p>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Link href="/products" className="group">
               <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -46,6 +49,23 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Browse Laptops</h3>
                 <p className="text-gray-600">Discover amazing laptops from top brands with detailed specifications</p>
+              </div>
+            </Link>
+
+            <Link href="/dashboard" className="group">
+              <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Admin Dashboard</h3>
+                <p className="text-gray-600">Manage your laptop inventory and track sales performance</p>
               </div>
             </Link>
 
