@@ -393,6 +393,7 @@ export default function Products() {
                     className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
                   >
                     <div className="relative">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={laptop.image || "/placeholder.svg"}
                         alt={laptop.name}
@@ -463,6 +464,7 @@ export default function Products() {
                 {filteredAndSortedLaptops.map((laptop) => (
                   <div key={laptop.id} className="bg-white rounded-lg shadow-md p-6 flex items-center space-x-6">
                     <div className="relative flex-shrink-0">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={laptop.image || "/placeholder.svg"}
                         alt={laptop.name}

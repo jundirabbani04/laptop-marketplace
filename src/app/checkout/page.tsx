@@ -186,6 +186,7 @@ export default function Checkout() {
                   <div className="space-y-4">
                     {cartItems.map((item) => (
                       <div key={item.id} className="flex items-center space-x-4 border-b pb-4">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={item.image || "/placeholder.svg"}
                           alt={item.name}
